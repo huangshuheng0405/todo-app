@@ -1,0 +1,22 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# For more details, see
+#   https://d.android.com/r/tools/r8/keep-rules
+
+# ---------------------------------------------------------------
+# Room
+# 生成的 TodoDatabase_Impl 是运行时按类名反射加载的，
+# 被 R8 裁掉或改名会直接抛 ClassNotFoundException / 表字段对不上。
+# ---------------------------------------------------------------
+-keep class * extends androidx.room.RoomDatabase { <init>(); }
+-keep @androidx.room.Entity class * { *; }
+-keepclassmembers class * {
+    @androidx.room.* <methods>;
+}
+-dontwarn androidx.room.paging.**
+
+# 实体类字段名就是列名，保留字段名（若上面 -keep 已覆盖可删）
+-keepclassmembers @androidx.room.Entity class * {
+    <fields>;
+}

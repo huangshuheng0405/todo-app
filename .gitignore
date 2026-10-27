@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# release 签名文件与口令，绝不提交
+/keystore.properties
+/release.keystore
+*.jks
+*.keystore
+
+# 本地验证用的截图与导出的数据库
+/build-screens/
+
+
+.workbuddy/
