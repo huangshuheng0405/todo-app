@@ -1,3 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">待办</string>
+
+    <!-- 通用动作 -->
+    <string name="action_cancel">取消</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_save">保存</string>
+    <string name="action_delete">删除</string>
+    <string name="action_close">关闭</string>
+    <string name="action_back">返回</string>
+    <string name="action_clear">清空</string>
+    <string name="action_search">搜索</string>
+    <string name="action_done">完成</string>
+    <string name="action_create">创建</string>
+    <string name="action_undo">撤销</string>
+    <string name="cd_selected">已选中</string>
+    <string name="cd_add_task">新建任务</string>
+    <string name="cd_save_task">保存任务</string>
+    <string name="cd_clear_input">清空输入</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_home">首页</string>
+    <string name="tab_browse">浏览</string>
+    <string name="tab_completed">已完成</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 视图标题 -->
+    <string name="view_today">今天</string>
+    <string name="view_inbox">收件箱</string>
+    <string name="view_upcoming">即将到来</string>
+    <string name="view_project_fallback">项目</string>
+    <string name="view_inbox_subtitle">没有归属项目的任务</string>
+    <string name="view_upcoming_subtitle">接下来几天的安排</string>
+    <string name="view_project_subtitle">%1$d 项待办</string>
+
+    <!-- 分组标题 -->
+    <string name="section_overdue">逾期</string>
+    <string name="section_today">今天</string>
+    <string name="section_after">之后</string>
+    <string name="section_undated">没有日期</string>
+
+    <!-- 任务行 -->
+    <string name="task_completed_at">完成于 %1$s</string>
+    <string name="task_created_at">创建于 %1$s</string>
+    <string name="cd_task_priority">优先级 P%1$d</string>
+
+    <!-- 长按菜单 -->
+    <string name="menu_priority">优先级</string>
+    <string name="priority_p1">P1 · 最高</string>
+    <string name="priority_p2">P2 · 高</string>
+    <string name="priority_p3">P3 · 中</string>
+    <string name="priority_p4">P4 · 无优先级</string>
+    <string name="priority_none">无优先级</string>
+    <string name="priority_short">P%1$d</string>
+    <string name="menu_move_today">挪到今天</string>
+    <string name="menu_clear_date">清除日期</string>
+    <string name="menu_delete_task">删除任务</string>
+
+    <!-- 快速添加面板 -->
+    <string name="editor_task_name">任务名称</string>
+    <string name="editor_description">描述</string>
+    <string name="editor_add_description">添加描述</string>
+    <string name="editor_date">日期</string>
+    <string name="editor_priority">优先级</string>
+    <string name="editor_project">项目</string>
+
+    <!-- 日期选择 -->
+    <string name="date_today">今天</string>
+    <string name="date_tomorrow">明天</string>
+    <string name="date_yesterday">昨天</string>
+    <string name="date_next_week">下周</string>
+    <string name="date_next_monday">下周一 · %1$s</string>
+    <string name="date_custom">自选日期…</string>
+    <string name="date_clear">清除日期</string>
+    <string name="date_none">无日期</string>
+
+    <!-- 首页 -->
+    <string name="home_subtitle">%1$s · %2$s</string>
+    <string name="home_task_count">%1$d 项</string>
+    <string name="home_all_done">已清空</string>
+    <string name="home_empty_title">今天没有待办了</string>
+    <string name="home_empty_message">点下面的 + 添加一项，或者心安理得地歇一会儿。</string>
+    <string name="greeting_morning">早上好</string>
+    <string name="greeting_forenoon">上午好</string>
+    <string name="greeting_noon">中午好</string>
+    <string name="greeting_afternoon">下午好</string>
+    <string name="greeting_evening">晚上好</string>
+    <string name="greeting_night">夜深了</string>
+
+    <!-- 浏览 -->
+    <string name="browse_subtitle">所有视图与项目</string>
+    <string name="browse_projects">项目</string>
+    <string name="browse_new_project">新建项目</string>
+    <string name="browse_new_project_hint">例如：装修、读书计划</string>
+
+    <!-- 已完成 -->
+    <string name="completed_subtitle_some">共 %1$d 项</string>
+    <string name="completed_subtitle_none">还没有完成记录</string>
+    <string name="completed_empty_title">还没有完成的任务</string>
+    <string name="completed_empty_message">完成任务后会归档到这里，方便回头看看自己干了多少活。</string>
+
+    <!-- 搜索 -->
+    <string name="search_hint">搜索任务…</string>
+    <string name="search_idle_title">搜点什么</string>
+    <string name="search_idle_message">任务标题和描述都会参与匹配。</string>
+    <string name="search_empty_title">没有匹配的任务</string>
+    <string name="search_empty_message">换个关键词，或者去添加一个新的待办。</string>
+    <string name="search_result_count">%1$d 个结果</string>
+
+    <!-- 空状态 -->
+    <string name="empty_generic_title">这里还是空的</string>
+    <string name="empty_inbox_message">没有归属项目的任务都会落在收件箱。</string>
+    <string name="empty_upcoming_message">接下来几天没有安排，先松口气。</string>
+    <string name="empty_project_message">这个项目下还没有待办。</string>
+    <string name="empty_default_message">暂时没有任务。</string>
+
+    <!-- 设置 -->
+    <string name="settings_subtitle">账号、外观与数据</string>
+    <string name="settings_account">账号</string>
+    <string name="settings_sign_out">退出登录</string>
+    <string name="settings_signed_in_hint">已登录 · 数据仅在本机</string>
+    <string name="settings_appearance">外观</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_data">数据</string>
+    <string name="settings_clear_completed">清空已完成的任务</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_version">版本</string>
+    <string name="settings_built_with">Todoist 风格 · Jetpack Compose</string>
+    <string name="settings_count_items">%1$d 项</string>
+
+    <!-- 任务详情 -->
+    <string name="detail_status_done">已完成</string>
+
+    <!-- 登录 -->
+    <string name="login_brand">待办</string>
+    <string name="login_subtitle_signin">登录后，你的待办只属于你</string>
+    <string name="login_subtitle_signup">创建账号，开始记录</string>
+    <string name="login_mode_signin">登录</string>
+    <string name="login_mode_signup">注册</string>
+    <string name="login_submit_signin">登录</string>
+    <string name="login_submit_signup">创建账号</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_email_hint">you@example.com</string>
+    <string name="login_password">密码</string>
+    <string name="login_password_hint">至少 %1$d 位</string>
+    <string name="login_show_password">显示</string>
+    <string name="login_hide_password">隐藏</string>
+    <string name="login_footer_hint">账号目前只存在这台设备上，接入后端后会改为服务端校验。首次使用请先点「注册」。</string>
+
+    <!-- 登录错误 -->
+    <string name="error_email_required">请输入邮箱</string>
+    <string name="error_email_invalid">邮箱格式不正确</string>
+    <string name="error_password_required">请输入密码</string>
+    <string name="error_password_short">密码至少 %1$d 位</string>
+    <string name="error_bad_credentials">邮箱或密码不正确</string>
+    <string name="error_email_taken">该邮箱已注册，直接登录吧</string>
+    <string name="error_account_corrupt">账号数据异常，请重新注册</string>
+
+    <!-- Snackbar -->
+    <string name="snackbar_task_completed">已完成「%1$s」</string>
+    <string name="snackbar_task_deleted">已删除「%1$s」</string>
 </resources>

@@ -86,7 +86,7 @@ keyPassword=你的口令
 ## 项目结构
 
 ```
-app/src/main/java/com/example/app2/
+app/src/main/java/com/huangshuheng/todo/
 ├── auth/                 认证：AuthRepository 接口 + LocalAuthRepository 占位实现
 ├── data/                 Room 实体、DAO、数据库、迁移、仓库
 ├── ui/
@@ -115,9 +115,17 @@ app/src/main/java/com/example/app2/
 ## 已知限制
 
 - **账号是本机占位实现**：密码用 PBKDF2 加盐哈希后存在 `SharedPreferences`，没有邮箱验证、没有找回密码。真实校验必须由后端完成，接入方式见 `auth/AuthRepository` 的注释
-- 包名仍是模板值 `com.example.app2`，正式发布前需要改
+- 包名是 `com.huangshuheng.todo`，应用名「待办」，正式发布前可换成自己的域名反写
 - 未实现：提醒通知、重复任务、子任务、标签、项目改名/换色/排序
 - 首次安装没有示例数据，空状态文案会引导你新建第一条
+
+## 国际化
+
+所有界面文案都在 `res/values/strings.xml`，Kotlin 里不再有中文硬编码
+（分区标题、鉴权错误提示都以字符串资源 id 传递）。
+
+日期格式跟随系统语言：中文环境下显示「10月27日 周二」，英文环境下显示「Oct 27 Tue」。
+目前只提供了中文资源，如需英文界面，复制一份 `res/values-en/strings.xml` 翻译即可。
 
 ## 数据迁移
 
